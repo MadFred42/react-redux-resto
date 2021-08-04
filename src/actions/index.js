@@ -11,15 +11,37 @@ const menuRequested = () => {
     }
 };
 
-const menuError = (err) => {
+const addedToCart = (id) => {
     return {
-        type: 'MENU_ERROR',
-        payload: err
+        type: 'ITEM_ADD_TO_CART',
+        payload: id
+    }
+};
+
+const deleteFromCart = (id) => {
+    return {
+        type: 'ITEM_DELETE_FROM_CART',
+        payload: id
+    }
+};
+
+const totalPrice = () => {
+    return {
+        type: 'TOTAL_PRICE'
+    }
+};
+
+const menuError = () => {
+    return {
+        type: 'MENU_ERROR'
     }
 }
 
 export {
     menuLoaded,
     menuRequested,
-    menuError
+    menuError,
+    addedToCart,
+    deleteFromCart,
+    totalPrice
 }

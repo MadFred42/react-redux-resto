@@ -21,6 +21,14 @@
         object-fit: cover;
         margin-bottom: 20px;
     }
+    &__categoryImg {
+        width: 35px;
+        height: 35px;
+        transform: translateX(-30px);
+        transform: translateY(-320px);
+        object-fit: contain;
+        margin-bottom: 20px;
+    }
     &__category, &__price {
         font-size: 18px;
         font-weight: 300;

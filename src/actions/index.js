@@ -25,15 +25,15 @@ const deleteFromCart = (id) => {
     }
 };
 
-const totalPrice = () => {
-    return {
-        type: 'TOTAL_PRICE'
-    }
-};
-
 const menuError = () => {
     return {
         type: 'MENU_ERROR'
+    }
+}
+
+const totalPrice = () => {
+    return {
+        type: 'TOTAL_PRICE'
     }
 }
 

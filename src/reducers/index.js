@@ -3,11 +3,10 @@ const initialState = {
     loading: true,
     error: false,
     items:[],
-    total: 0
+    totalPrice: 0
 }
 
 const reducer = (state = initialState, action) => {
-    console.log(state);
     switch (action.type) {
         case 'MENU_LOADED':
             return {
@@ -33,19 +32,29 @@ const reducer = (state = initialState, action) => {
         case 'ITEM_ADD_TO_CART':
             const id = action.payload; 
             const item = state.menu.find(item => item.id === id);
+            const elem = state.items.find(item => item.id === id);
             const newItem = {
                 title: item.title,
                 price: item.price,
                 url: item.url,
-                id: item.id
+                id: item.id,
+                count: 1
             };
+
+            if (elem) {
+                Object.assign( {}, elem, { count: elem.count++ } );
+                return {
+                    ...state
+                };
+            }    
+
             return {
                 ...state,
                 items: [
                     ...state.items,
                     newItem
                 ]
-            }
+            };
         case 'ITEM_DELETE_FROM_CART':
             const indx = action.payload;   
             const itemIndex = state.items.findIndex(item => item.id === indx);
@@ -58,12 +67,12 @@ const reducer = (state = initialState, action) => {
                 ]
             }
         case 'TOTAL_PRICE':
-            const totalPrice = state.items.map(item => item.price);
-            const total = totalPrice.reduce((accumulator, currentValue) => accumulator + currentValue);
-            console.log(total);
-            return {
+            const price = state.items.map(item => item.price * item.count);
+            const totalPrice = price.reduce((accumulator, currentValue) => accumulator + currentValue);
+            
+            return{
                 ...state,
-                total
+                totalPrice
             }
         default:
             return state;

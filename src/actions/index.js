@@ -37,11 +37,34 @@ const totalPrice = () => {
     }
 }
 
+const increaseItem = (id) => {
+    return {
+        type: 'INCREASE_ITEM',
+        payload: id
+    }
+}
+
+const decreaseItem = (id) => {
+    return {
+        type: 'DECREASE_ITEM',
+        payload: id
+    }
+}
+
+const orderMade = () => {
+    return {
+        type: 'ORDER_MADE'
+    }
+}
+
 export {
     menuLoaded,
     menuRequested,
     menuError,
     addedToCart,
     deleteFromCart,
-    totalPrice
+    totalPrice,
+    increaseItem,
+    decreaseItem,
+    orderMade
 }

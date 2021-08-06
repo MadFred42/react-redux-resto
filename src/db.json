@@ -1,39 +1,147 @@
 {
-	"menu": [
-		{
-			"title": "Cesar salad",
-			"price": 12,
-			"url": "https://static.1000.menu/img/content/21458/-salat-cezar-s-kr-salat-cezar-s-krevetkami-s-maionezom_1501173720_1_max.jpg",
-			"category": "salads",
-			"id": 1
-		},
-		{
-			"title": "Pizza Margherita",
-			"price": 10,
-			"url": "https://www.gastronom.ru/binfiles/images/20190605/b5a30083.jpg",
-			"category": "pizza",
-			"id": 2
-		},
-		{
-			"title": "Pizza Napoletana",
-			"price": 13,
-			"url": "https://media-cdn.tripadvisor.com/media/photo-s/11/ec/12/a3/la-pizza-napoletana.jpg",
-			"category": "pizza",
-			"id": 3
-		},
-		{
-			"title": "Greece salad",
-			"price": 8,
-			"url": "https://assets.epicurious.com/photos/576454fb42e4a5ed66d1df6b/master/pass/greek-salad.jpg",
-			"category": "salads",
-			"id": 4
-		},
-		{
-			"title": "Cowboy Steak",
-			"price": 25,
-			"url": "https://i.cbc.ca/1.4491288.1516208229!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/cowboysteak.jpg",
-			"category": "meat",
-			"id": 5
-		}
-	]
+  "menu": [
+    {
+      "title": "Cesar salad",
+      "price": 12,
+      "url": "https://static.1000.menu/img/content/21458/-salat-cezar-s-kr-salat-cezar-s-krevetkami-s-maionezom_1501173720_1_max.jpg",
+      "category": "salads",
+      "id": 1
+    },
+    {
+      "title": "Pizza Margherita",
+      "price": 10,
+      "url": "https://www.gastronom.ru/binfiles/images/20190605/b5a30083.jpg",
+      "category": "pizza",
+      "id": 2
+    },
+    {
+      "title": "Pizza Napoletana",
+      "price": 13,
+      "url": "https://media-cdn.tripadvisor.com/media/photo-s/11/ec/12/a3/la-pizza-napoletana.jpg",
+      "category": "pizza",
+      "id": 3
+    },
+    {
+      "title": "Greece salad",
+      "price": 8,
+      "url": "https://assets.epicurious.com/photos/576454fb42e4a5ed66d1df6b/master/pass/greek-salad.jpg",
+      "category": "salads",
+      "id": 4
+    },
+    {
+      "title": "Cowboy Steak",
+      "price": 25,
+      "url": "https://i.cbc.ca/1.4491288.1516208229!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/cowboysteak.jpg",
+      "category": "meat",
+      "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "order": [
+        {
+          "name": "Cesar salad",
+          "qtty": 2
+        },
+        {
+          "name": "Pizza Margherita",
+          "qtty": 1
+        },
+        {
+          "name": "Pizza Napoletana",
+          "qtty": 1
+        },
+        {
+          "name": "Cowboy Steak",
+          "qtty": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "order": [
+        {
+          "name": "Cesar salad",
+          "qtty": 1
+        },
+        {
+          "name": "Pizza Margherita",
+          "qtty": 1
+        },
+        {
+          "name": "Pizza Napoletana",
+          "qtty": 1
+        }
+      ],
+      "id": 2
+    },
+    {
+      "order": [
+        {
+          "name": "Cesar salad",
+          "qtty": 1
+        },
+        {
+          "name": "Pizza Margherita",
+          "qtty": 1
+        },
+        {
+          "name": "Pizza Napoletana",
+          "qtty": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "order": [
+        {
+          "name": "Cesar salad",
+          "qtty": 1
+        },
+        {
+          "name": "Pizza Margherita",
+          "qtty": 1
+        },
+        {
+          "name": "Pizza Napoletana",
+          "qtty": 1
+        },
+        {
+          "name": "Cowboy Steak",
+          "qtty": 1
+        },
+        {
+          "name": "Greece salad",
+          "qtty": 1
+        }
+      ],
+      "id": 4
+    },
+    {
+      "order": [
+        {
+          "name": "Cesar salad",
+          "qtty": 1
+        },
+        {
+          "name": "Pizza Margherita",
+          "qtty": 1
+        }
+      ],
+      "id": 5
+    },
+    {
+      "order": [
+        {
+          "name": "Cesar salad",
+          "qtty": 2
+        },
+        {
+          "name": "Pizza Margherita",
+          "qtty": 1
+        }
+      ],
+      "id": 6
+    }
+  ]
 }

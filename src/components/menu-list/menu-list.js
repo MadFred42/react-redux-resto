@@ -9,7 +9,7 @@ import Error from '../error';
 import './menu-list.scss';
 
 class MenuList extends Component {
-
+    
     componentDidMount() {
         this.props.menuRequested();
 
@@ -26,7 +26,7 @@ class MenuList extends Component {
 
     render() {
         const { menuItems, loading, error, addedToCart } = this.props;
-        
+        console.log(this.props);
         if (error) {
             return <Error />
         }
@@ -39,7 +39,7 @@ class MenuList extends Component {
                 return <MenuListItem 
                             key={menuItem.id} 
                             menuList={menuItem}
-                            onAddToCart={() => this.onAddToCart(menuItem.id)} />
+                            onAddToCart={() => addedToCart(menuItem.id)} />
             })
         return (
            <View item={content} />
